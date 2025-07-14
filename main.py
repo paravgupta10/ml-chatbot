@@ -126,7 +126,7 @@ class ChatbotAssistant:
     def save_model(self, model_path, dimensions_path):
         torch.save(self.model.state_dict(), model_path)
         with open(dimensions_path, 'w') as f:
-            json.dump({'input_size:': self.X.shape[1], 'output_size': len(self.intents)}, f)
+            json.dump({'input_size': self.X.shape[1], 'output_size': len(self.intents)}, f)
 
     def load_model(self, model_path, dimensions_path):
         with open(dimensions_path, 'r') as f:
@@ -187,15 +187,15 @@ if __name__ == '__main__':
             'news': get_news
         }
     )
-    assistant.parse_intents()
-    assistant.prepare_data()
-    assistant.train_model(batch_size=8, learning_rate=0.001, epochs=100)
-    assistant.save_model('chatbot_model.pth', 'dimensions.json')
-
-
-    #assistant = ChatbotAssistant('intents.json', function_mappings = {'stocks': get_stocks})
     #assistant.parse_intents()
-    #assistant.load_model('chatbot_model.pth', 'dimensions.json')
+    #assistant.prepare_data()
+    #assistant.train_model(batch_size=8, learning_rate=0.001, epochs=100)
+    #assistant.save_model('chatbot_model.pth', 'dimensions.json')
+
+
+    assistant = ChatbotAssistant('intents.json', function_mappings = {'stocks': get_stocks})
+    assistant.parse_intents()
+    assistant.load_model('chatbot_model.pth', 'dimensions.json')
 
     while True:
         message = input('Enter your message:')
