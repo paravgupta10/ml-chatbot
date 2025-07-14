@@ -1,0 +1,68 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": ["Hi", "How are you", "Is anyone there?", "Hello", "Good day", "Whats up", "Hey", "Greetings", "Yo", "What's going on?", "Howdy", "Hi there!", "Hey there"],
+      "responses": ["Hello!", "Good to see you again!", "Hi there, how can I help?", "Hey! I'm here to assist you.", "Welcome back!", "Hi! What can I do for you today?"]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": ["cya", "See you later", "Goodbye", "I am leaving", "Have a good day", "bye", "ciao", "see ya", "talk to you later", "bye bye", "farewell", "later", "I gotta go"],
+      "responses": ["Sad to see you go :(", "Talk to you later", "Goodbye!", "Take care!", "See you soon!", "Have a great day ahead!"]
+    },
+    {
+      "tag": "programming",
+      "patterns": ["What is programming?", "What is coding?", "Tell me about programming", "Tell me about coding", "What is software development?", "How do you write code?", "Explain coding", "How do I learn programming?", "What languages should I learn?"],
+      "responses": [
+        "Programming, also known as coding, means writing computer instructions to automate tasks.",
+        "It's how we communicate with computers to perform various tasks.",
+        "Software development involves designing, writing, testing, and maintaining code to build applications.",
+        "To get started with programming, you can try Python or JavaScript!"
+      ]
+    },
+    {
+      "tag": "stocks",
+      "patterns": ["What are my stocks?", "Which stocks do I own?", "Show my stock portfolio", "How are my stocks doing?", "Update on my shares", "Portfolio summary"],
+      "responses": [
+        "Here are your current stock holdings!",
+        "Here's a summary of your portfolio performance.",
+        "Displaying your latest stock updates.",
+        "Let me fetch your stock data..."
+      ]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks a lot", "Much appreciated", "Cheers", "Thx", "I appreciate it"],
+      "responses": ["You're welcome!", "No problem!", "Happy to help!", "Anytime!", "Glad I could assist."]
+    },
+    {
+      "tag": "weather",
+      "patterns": ["What's the weather like?", "Tell me the weather", "Is it sunny today?", "Will it rain?", "Current weather?", "Forecast for today", "Do I need an umbrella?"],
+      "responses": ["Let me check the weather for you...", "It's sunny and bright!", "Looks like it might rain—carry an umbrella!", "The forecast shows clear skies today."]
+    },
+    {
+      "tag": "help",
+      "patterns": ["I need help", "Can you help me?", "Support", "Assistance", "Help me please", "I'm stuck", "I have a question"],
+      "responses": ["Of course! What do you need help with?", "Sure, I'm here to assist.", "Ask me anything!", "Let’s solve this together."]
+    },
+    {
+      "tag": "jokes",
+      "patterns": ["Tell me a joke", "Make me laugh", "Any jokes?", "Say something funny", "I need a laugh", "Humor me"],
+      "responses": [
+        "Why don’t programmers like nature? Too many bugs.",
+        "Why do Java developers wear glasses? Because they don’t C#.",
+        "I told my computer I needed a break, and it said no problem—it would go to sleep!"
+      ]
+    },
+    {
+      "tag": "time",
+      "patterns": ["What time is it?", "Tell me the time", "Current time?", "Can you give me the time?", "Time now"],
+      "responses": ["It's time to be awesome!", "Let me check... the current time is [insert time]", "Here's the current time for you."]
+    },
+    {
+      "tag": "news",
+      "patterns": ["What's the news?", "Give me latest news", "Any updates?", "Current events?", "News headlines", "Tell me what's happening around the world"],
+      "responses": ["Here are the top headlines right now...", "Fetching the latest news for you.", "Here's what's trending today.", "These are the current updates."]
+    }
+  ]
+}
